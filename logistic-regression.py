@@ -22,7 +22,7 @@
 
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler,Imputer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
@@ -33,10 +33,12 @@ from sklearn.metrics import accuracy_score
 
 # Import dataset
 data = pd.read_csv("titanic.csv")
-print(data.head())
+# print(data.head())
 # Drop rows that contains NA (only age column has NA)
-data = data.dropna(subset=["Age"])
 
+# data = data.dropna(subset=["Age"])
+imp = Imputer(missing_values="NaN", strategy="median")
+data["Age"] = imp.fit_transform(np.array(data["Age"]).reshape(-1,1)).ravel()
 # Drop cols that i think they are useless
 data = data.drop(["PassengerId","Name","Ticket","Cabin","Embarked"],axis="columns")
 
@@ -135,7 +137,7 @@ def start_learning(X,Y,W,b,learning_rate=0.001,iteration=5000):
         W,b = update_weights(X,Y,W,b,learning_rate)
 
         # Every 1000 iteration give us a hint
-        if i % 1000 == 0:
+        if i % 1000 == 0 and i != 0:
             print(i)
 
     return W,b
