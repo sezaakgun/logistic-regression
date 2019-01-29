@@ -32,8 +32,8 @@ $ python logistic-regression.py
 
   - Data we have is downloaded from [kaggle](https://www.kaggle.com/c/titanic).
 
-  - I highly inspired form this [source](https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
+  - I highly inspired form this [source](https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc).
 
 
 # License
-  This project is licensed under the MIT License - see the LICENSE.txt file for details
+  This project is licensed under the MIT License - see the LICENSE.txt file for details.
