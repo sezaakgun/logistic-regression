@@ -28,7 +28,7 @@ $ pip install sklearn
 $ python logistic-regression.py
 ```
 
-# Referances
+# References
 
   - Data we have is downloaded from [kaggle](https://www.kaggle.com/c/titanic).
 
