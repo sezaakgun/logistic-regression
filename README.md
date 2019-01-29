@@ -1,12 +1,13 @@
 # logistic-regression
 
-Data we have is downoaded from [kaggle](https://www.kaggle.com/c/titanic).
-
 The main challenge is to predict rather a passenger would live or not.
+
+
 
 
 # Prerequisies
   python 3.6 or higher and pip.
+
 
 
 
@@ -27,6 +28,11 @@ $ pip install sklearn
 $ python logistic-regression.py
 ```
 
+# Referances
+
+  -Data we have is downloaded from [kaggle](https://www.kaggle.com/c/titanic).
+
+  -I highly inspired form this [site](https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
 
 
 # License
