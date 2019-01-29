@@ -1,6 +1,6 @@
 # logistic-regression
 
-Data we have is downoaded from kaggle(https://www.kaggle.com/c/titanic).
+Data we have is downoaded from [kaggle] (https://www.kaggle.com/c/titanic).
 
 The main challenge is to predict rather a passenger would live or not.
 
